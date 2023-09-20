@@ -1,0 +1,345 @@
+[
+    {
+      "Marca": "Ford",
+      "Modelo": "Focus",
+      "Año": 2022,
+      "Tipo": "Hatchback",
+      "Capacidad": 5,
+      "Precio_Diario": 55.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal K",
+          "Cantidad": 10
+        },
+        {
+          "Sucursal": "Sucursal M",
+          "Cantidad": 7
+        }
+      ]
+    },
+    {
+      "Marca": "Chevrolet",
+      "Modelo": "Malibu",
+      "Año": 2023,
+      "Tipo": "Sedán",
+      "Capacidad": 5,
+      "Precio_Diario": 65.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal L",
+          "Cantidad": 9
+        },
+        {
+          "Sucursal": "Sucursal N",
+          "Cantidad": 6
+        }
+      ]
+    },
+    {
+      "Marca": "Volkswagen",
+      "Modelo": "Tiguan",
+      "Año": 2022,
+      "Tipo": "SUV",
+      "Capacidad": 5,
+      "Precio_Diario": 68.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal M",
+          "Cantidad": 11
+        },
+        {
+          "Sucursal": "Sucursal O",
+          "Cantidad": 5
+        }
+      ]
+    },
+    {
+      "Marca": "Toyota",
+      "Modelo": "Rav4",
+      "Año": 2022,
+      "Tipo": "SUV",
+      "Capacidad": 5,
+      "Precio_Diario": 70.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal N",
+          "Cantidad": 7
+        },
+        {
+          "Sucursal": "Sucursal P",
+          "Cantidad": 9
+        }
+      ]
+    },
+    {
+      "Marca": "Nissan",
+      "Modelo": "Sentra",
+      "Año": 2023,
+      "Tipo": "Sedán",
+      "Capacidad": 5,
+      "Precio_Diario": 60.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal O",
+          "Cantidad": 8
+        },
+        {
+          "Sucursal": "Sucursal Q",
+          "Cantidad": 10
+        }
+      ]
+    },
+    {
+      "Marca": "Hyundai",
+      "Modelo": "Elantra",
+      "Año": 2022,
+      "Tipo": "Sedán",
+      "Capacidad": 5,
+      "Precio_Diario": 58.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal P",
+          "Cantidad": 7
+        },
+        {
+          "Sucursal": "Sucursal R",
+          "Cantidad": 11
+        }
+      ]
+    },
+    {
+      "Marca": "Kia",
+      "Modelo": "Sportage",
+      "Año": 2022,
+      "Tipo": "SUV",
+      "Capacidad": 5,
+      "Precio_Diario": 63.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal Q",
+          "Cantidad": 6
+        },
+        {
+          "Sucursal": "Sucursal S",
+          "Cantidad": 9
+        }
+      ]
+    },
+    {
+      "Marca": "Mazda",
+      "Modelo": "CX-5",
+      "Año": 2023,
+      "Tipo": "SUV",
+      "Capacidad": 5,
+      "Precio_Diario": 72.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal R",
+          "Cantidad": 8
+        },
+        {
+          "Sucursal": "Sucursal T",
+          "Cantidad": 10
+        }
+      ]
+    },
+    {
+      "Marca": "Subaru",
+      "Modelo": "Outback",
+      "Año": 2022,
+      "Tipo": "SUV",
+      "Capacidad": 5,
+      "Precio_Diario": 67.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal S",
+          "Cantidad": 7
+        },
+        {
+          "Sucursal": "Sucursal U",
+          "Cantidad": 11
+        }
+      ]
+    },
+    {
+      "Marca": "Audi",
+      "Modelo": "Q7",
+      "Año": 2022,
+      "Tipo": "SUV",
+      "Capacidad": 5,
+      "Precio_Diario": 75.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal J",
+          "Cantidad": 6
+        },
+        {
+          "Sucursal": "Sucursal L",
+          "Cantidad": 8
+        }
+      ]
+    },
+    {
+      "Marca": "Ford",
+      "Modelo": "Focus",
+      "Año": 2022,
+      "Tipo": "Hatchback",
+      "Capacidad": 5,
+      "Precio_Diario": 55.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal K",
+          "Cantidad": 10
+        },
+        {
+          "Sucursal": "Sucursal M",
+          "Cantidad": 7
+        }
+      ]
+    },
+    {
+      "Marca": "Chevrolet",
+      "Modelo": "Malibu",
+      "Año": 2023,
+      "Tipo": "Sedán",
+      "Capacidad": 5,
+      "Precio_Diario": 65.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal L",
+          "Cantidad": 9
+        },
+        {
+          "Sucursal": "Sucursal N",
+          "Cantidad": 6
+        }
+      ]
+    },
+    {
+      "Marca": "Volkswagen",
+      "Modelo": "Tiguan",
+      "Año": 2022,
+      "Tipo": "SUV",
+      "Capacidad": 5,
+      "Precio_Diario": 68.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal M",
+          "Cantidad": 11
+        },
+        {
+          "Sucursal": "Sucursal O",
+          "Cantidad": 5
+        }
+      ]
+    },
+    {
+      "Marca": "Toyota",
+      "Modelo": "Rav4",
+      "Año": 2022,
+      "Tipo": "SUV",
+      "Capacidad": 5,
+      "Precio_Diario": 70.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal N",
+          "Cantidad": 7
+        },
+        {
+          "Sucursal": "Sucursal P",
+          "Cantidad": 9
+        }
+      ]
+    },
+    {
+      "Marca": "Nissan",
+      "Modelo": "Sentra",
+      "Año": 2023,
+      "Tipo": "Sedán",
+      "Capacidad": 5,
+      "Precio_Diario": 60.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal O",
+          "Cantidad": 8
+        },
+        {
+          "Sucursal": "Sucursal Q",
+          "Cantidad": 10
+        }
+      ]
+    },
+    {
+      "Marca": "Hyundai",
+      "Modelo": "Elantra",
+      "Año": 2022,
+      "Tipo": "Sedán",
+      "Capacidad": 5,
+      "Precio_Diario": 58.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal P",
+          "Cantidad": 7
+        },
+        {
+          "Sucursal": "Sucursal R",
+          "Cantidad": 11
+        }
+      ]
+    },
+    {
+      "Marca": "Kia",
+      "Modelo": "Sportage",
+      "Año": 2022,
+      "Tipo": "SUV",
+      "Capacidad": 5,
+      "Precio_Diario": 63.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal Q",
+          "Cantidad": 6
+        },
+        {
+          "Sucursal": "Sucursal S",
+          "Cantidad": 9
+        }
+      ]
+    },
+    {
+      "Marca": "Mazda",
+      "Modelo": "CX-5",
+      "Año": 2023,
+      "Tipo": "SUV",
+      "Capacidad": 5,
+      "Precio_Diario": 72.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal R",
+          "Cantidad": 8
+        },
+        {
+          "Sucursal": "Sucursal T",
+          "Cantidad": 10
+        }
+      ]
+    },
+    {
+      "Marca": "Subaru",
+      "Modelo": "Outback",
+      "Año": 2022,
+      "Tipo": "SUV",
+      "Capacidad": 5,
+      "Precio_Diario": 67.0,
+      "Stock": [
+        {
+          "Sucursal": "Sucursal S",
+          "Cantidad": 7
+        },
+        {
+          "Sucursal": "Sucursal U",
+          "Cantidad": 11
+        }
+      ]
+    }
+  ]
+  
