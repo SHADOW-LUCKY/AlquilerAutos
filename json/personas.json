@@ -1,0 +1,93 @@
+[
+    {
+      "Nombre": "Juan Pérez",
+      "DNI": "12345678A",
+      "Direccion": "Calle 123, Ciudad A",
+      "Telefono": "+1234567890",
+      "Email": "juan@example.com",
+      "Password": "contraseña123",
+      "Distintivo": "cliente"
+    },
+    {
+      "Nombre": "María López",
+      "DNI": "23456789B",
+      "Direccion": "Avenida XYZ, Ciudad B",
+      "Telefono": "+2345678901",
+      "Email": "maria@example.com",
+      "Password": "clave567",
+      "Distintivo": "vendedor"
+    },
+    {
+      "Nombre": "Carlos Rodríguez",
+      "DNI": "34567890C",
+      "Direccion": "Carrera 456, Ciudad C",
+      "Telefono": "+3456789012",
+      "Email": "carlos@example.com",
+      "Password": "miPassword",
+      "Distintivo": "cliente"
+    },
+    {
+      "Nombre": "Laura Martínez",
+      "DNI": "45678901D",
+      "Direccion": "Calle Principal, Ciudad D",
+      "Telefono": "+4567890123",
+      "Email": "laura@example.com",
+      "Password": "clave123",
+      "Distintivo": "cliente"
+    },
+    {
+      "Nombre": "David Smith",
+      "DNI": "56789012E",
+      "Direccion": "Avenida Central, Ciudad E",
+      "Telefono": "+5678901234",
+      "Email": "david@example.com",
+      "Password": "miClaveSecreta",
+      "Distintivo": "cliente"
+    },
+    {
+      "Nombre": "Ana García",
+      "DNI": "67890123F",
+      "Direccion": "Avenida Norte, Ciudad F",
+      "Telefono": "+6789012345",
+      "Email": "ana@example.com",
+      "Password": "secreto123",
+      "Distintivo": "cliente"
+    },
+    {
+      "Nombre": "Luis González",
+      "DNI": "78901234G",
+      "Direccion": "Calle Sur, Ciudad G",
+      "Telefono": "+7890123456",
+      "Email": "luis@example.com",
+      "Password": "miclaveprivada",
+      "Distintivo": "vendedor"
+    },
+    {
+      "Nombre": "Elena Fernández",
+      "DNI": "89012345H",
+      "Direccion": "Calle Este, Ciudad H",
+      "Telefono": "+8901234567",
+      "Email": "elena@example.com",
+      "Password": "contraseña678",
+      "Distintivo": "cliente"
+    },
+    {
+      "Nombre": "Roberto Ramírez",
+      "DNI": "90123456I",
+      "Direccion": "Avenida Oeste, Ciudad I",
+      "Telefono": "+9012345678",
+      "Email": "roberto@example.com",
+      "Password": "claveprivada",
+      "Distintivo": "gerente"
+    },
+    {
+      "Nombre": "Isabel Torres",
+      "DNI": "01234567J",
+      "Direccion": "Calle 123, Ciudad J",
+      "Telefono": "+0123456789",
+      "Email": "isabel@example.com",
+      "Password": "contraseñaprivada",
+      "Distintivo": "vendedor"
+    }
+  ]
+  
