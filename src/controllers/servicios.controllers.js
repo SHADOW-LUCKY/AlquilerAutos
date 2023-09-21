@@ -115,3 +115,38 @@ export const getAlquiler = async (req, res) => {
     }
 }
 
+//8. Obtener el costo total de un alquiler específico.
+export const getCostoAlquiler = async (req, res) => {
+    try {
+        const servicios = await DBconnection('Servicios')
+        const ID = req.body.id
+        const result = await servicios.find({_id: new ObjectId(ID)}).toArray()
+        result.length === 0 ?(
+            res.status(400).json({
+                msg: 'No hay servicios registrados'
+            })
+        ):(
+            res.status(200).json(result)
+        )
+    } catch (error) {
+        res.status(500).json(error)
+    }
+}
+//11. Obtener los detalles del alquiler que tiene fecha de inicio en '2023-07-05'.
+
+export const getAlquilerFecha = async (req, res) => {
+    try {
+        const servicios = await DBconnection('Servicios')
+        const fecha = req.body.fecha
+        const result = await servicios.find({Fecha_Inicio: fecha}).toArray()
+        result.length === 0 ?(
+            res.status(400).json({
+                msg: 'No hay servicios registrados'
+            })
+        ):(
+            res.status(200).json(result)
+        )
+    } catch (error) {
+        res.status(500).json(error)
+    }
+}

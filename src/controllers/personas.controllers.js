@@ -1,4 +1,5 @@
 import DBconnection from '../config/mongo.js'
+import { ObjectId } from 'mongodb'
 
 // 1.Mostrar todos los clientes registrados en la base de datos.
 export const getPersonas = async (req, res) => {
@@ -34,7 +35,8 @@ export const getSellers = async (req, res) => {
     }
 }
 
-//10.Listar los clientes con el DNI específico.
+
+//9.Listar los clientes con el DNI específico.
 
 export const getPersonaDNI = async (req, res) => {
     try {

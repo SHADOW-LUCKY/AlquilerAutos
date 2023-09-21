@@ -11,14 +11,14 @@ By nicolas ordoñez
 5. Obtener los detalles del alquiler con el ID de alquiler específico.✅
 6. Listar los empleados con el cargo de "Vendedor".✅
 7. Mostrar la cantidad total de automóviles disponibles en cada sucursal.
-8. Obtener el costo total de un alquiler específico.
-9. Listar los clientes con el DNI específico.
-10. Mostrar todos los automóviles con una capacidad mayor a 5 personas.
-11. Obtener los detalles del alquiler que tiene fecha de inicio en '2023-07-05'.
+8. Obtener el costo total de un alquiler específico.✅
+9. Listar los clientes con el DNI específico.✅
+10. Mostrar todos los automóviles con una capacidad mayor a 5 personas.✅
+11. Obtener los detalles del alquiler que tiene fecha de inicio en '2023-07-05'.✅
 12. Listar las reservas pendientes realizadas por un cliente específico.
-13. Mostrar los empleados con el cargo de "Gerente" o "Asistente".
+13. Mostrar los empleados con el cargo de "Gerente" o "Asistente".✅
 14. Obtener los datos de los clientes que realizaron al menos un alquiler.
-15. Listar todos los automóviles ordenados por marca y modelo.
+15. Listar todos los automóviles ordenados por marca y modelo.✅
 16. Mostrar la cantidad total de automóviles en cada sucursal junto con su dirección.
 17. Obtener la cantidad total de alquileres registrados en la base de datos.
 18. Mostrar los automóviles con capacidad igual a 5 personas y que estén disponibles.
