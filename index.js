@@ -4,6 +4,7 @@ import morgan from 'morgan'
 import dotenv from 'dotenv'
 import personasRoutes from './src/routes/personas.routes.js'
 import autosRoutes from './src/routes/autos.routes.js'
+import serviciosRoutes from './src/routes/servicios.routes.js'
 
 dotenv.config()
 
@@ -15,6 +16,7 @@ const port = process.env.PORT
 
 app.use('/personas', personasRoutes)
 app.use('/autos', autosRoutes)
+app.use('/servicios', serviciosRoutes)
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`)
