@@ -13,6 +13,11 @@ router.get('/reservasCliente', s.getReservasCliente)
 router.get('/count', s.countAlquileres)
 router.get('/getclialq', s.getClientesAlq)
 router.get('/getfecha', s.getAlquileresFecha)
+//CRUD
+router.get('/getalq', s.getAll)
+router.post('/addalquiler', s.create)
+router.patch('/updatealquiler', s.update)
+router.delete('/deletealquiler', s.delete)
 
 
 export default router

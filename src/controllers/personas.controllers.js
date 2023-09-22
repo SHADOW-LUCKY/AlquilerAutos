@@ -99,3 +99,36 @@ export const login = async (req, res) => {
       throw new Error(`Error al iniciar sesión: ${error.message}`);
     }
   };
+
+//crud 
+
+
+export const createPersona = async (req, res) => {
+    try {
+        const personas = await DBconnection('Personas')
+        const result = await personas.insertOne(req.body)
+        res.status(201).json(result)
+    } catch (error) {
+        res.status(500).json(error)
+    }
+}
+
+export const updatePersona = async (req, res) => {
+    try {
+        const personas = await DBconnection('Personas')
+        const result = await personas.updateOne({_id: new ObjectId(req.body.id)}, {$set: req.body})
+        res.status(200).json(result)
+    } catch (error) {
+        res.status(500).json(error)
+    }
+}
+
+export const deletePersona = async (req, res) => {
+    try {
+        const personas = await DBconnection('Personas')
+        const result = await personas.deleteOne({_id: new ObjectId(req.body.id)})
+        res.status(200).json(result)
+    } catch (error) {
+        res.status(500).json(error)
+    }
+}

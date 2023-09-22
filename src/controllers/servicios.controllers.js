@@ -250,3 +250,47 @@ export const getAlquileresFecha = async (req, res) => {
         res.status(500).json(error)
     }
 }
+
+//CRUD 
+
+export const getAll = async (req, res) => {
+    try {
+        const servicios = await DBconnection('Servicios')
+        const result = await servicios.find().toArray()
+        res.status(200).json(result)
+    } catch (error) {
+        res.status(500).json(error)
+    }
+}
+
+export const create = async (req, res) => {
+    try {
+
+        const servicios = await DBconnection('Servicios')
+        const result = await servicios.insertOne(req.body)
+        res.status(200).json(result)
+    } catch (error) {
+        res.status(500).json(error)
+    }
+}
+
+export const update = async (req, res) => {
+    try {
+        const servicios = await DBconnection('Servicios')
+        const result = await servicios.updateOne({_id: new ObjectId(req.body.id)}, {$set: req.body})
+        res.status(200).json(result)
+    } catch (error) {
+        res.status(500).json(error)
+    }
+}
+
+export const deleteOne = async (req, res) => {
+    try {
+        const servicios = await DBconnection('Servicios')
+        const result = await servicios.deleteOne({_id: new ObjectId(req.body.id)})
+        res.status(200).json(result)
+    } catch (error) {
+        res.status(500).json(error)
+    }
+}
+
