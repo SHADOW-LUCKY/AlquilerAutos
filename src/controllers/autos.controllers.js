@@ -79,6 +79,9 @@ export const getSucursalAutos = async (req, res) => {
         const sucursal = await DBconnection('Automoviles')
         const result = await sucursal.aggregate([
             {
+              $unwind: "$Stock"
+            },
+            {
               $lookup: {
                 from: "Sucursales",
                 localField: "Stock.Sucursal",
@@ -99,6 +102,7 @@ export const getSucursalAutos = async (req, res) => {
                 Sucursal: "$_id",
                 CantidadTotal: 1,
                 Direccion: 1
+
               }
             }
           ]).toArray();
