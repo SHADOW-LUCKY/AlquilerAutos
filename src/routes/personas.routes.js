@@ -7,5 +7,6 @@ router.get('/getall', p.getPersonas)
 router.get('/getdni', p.getPersonaDNI)
 router.get('/getcargo', p.getPersonasCargo)
 router.get('/sellers ', p.getSellers)
+router.get('/login', p.login)
 
 export default router

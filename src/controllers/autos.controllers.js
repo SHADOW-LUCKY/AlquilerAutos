@@ -4,7 +4,24 @@ import DBconnection from '../config/mongo.js'
 export const getSucursal = async (req, res) => {
     try {
         const sucursal = await DBconnection('Automoviles')
-        const result = await sucursal.aggregate([]).toArray();
+       const result = await sucursal.aggregate([
+        {
+          $unwind: "$Stock"
+        },
+        {
+          $group: {
+            _id: "$Stock.Sucursal",
+            CantidadTotal: { $sum: "$Stock.Cantidad" }
+          }
+        },
+        {
+          $project: {
+            _id: 0,
+            Sucursal: "$_id",
+            CantidadTotal: 1
+          }
+        }
+      ]).toArray();
         result.length === 0 ? (
             res.status(400).json({
                 msg: 'No hay sucursales registradas'
@@ -99,5 +116,17 @@ export const getSucursalAutos = async (req, res) => {
 
 //18. Mostrar los automóviles con capacidad igual a 5 personas y que estén disponibles.
 export const getAutosDisponibles = async (req, res) => {
-    
+    try {
+        const autos = await DBconnection('Automoviles')
+        const result = await autos.find({$and : [{Capacidad: 5}, {'Stock.Cantidad': {$gt: 0}}]}).toArray()
+        result.length === 0 ? (
+            res.status(400).json({
+                msg: 'No hay autos registrados'
+            })
+        ) : (
+            res.status(200).json(result)
+        )
+    } catch (error) {
+        res.status(500).json(error)
+    }
 }

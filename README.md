@@ -10,7 +10,7 @@ By nicolas ordoñez
 4. Mostrar todas las reservas pendientes con los datos del cliente y el automóvil reservado.✅
 5. Obtener los detalles del alquiler con el ID de alquiler específico.✅
 6. Listar los empleados con el cargo de "Vendedor".✅
-7. Mostrar la cantidad total de automóviles disponibles en cada sucursal.
+7. Mostrar la cantidad total de automóviles disponibles en cada sucursal.✅
 8. Obtener el costo total de un alquiler específico.✅
 9. Listar los clientes con el DNI específico.✅
 10. Mostrar todos los automóviles con una capacidad mayor a 5 personas.✅
@@ -21,6 +21,6 @@ By nicolas ordoñez
 15. Listar todos los automóviles ordenados por marca y modelo.✅
 16. Mostrar la cantidad total de automóviles en cada sucursal junto con su dirección.✅
 17. Obtener la cantidad total de alquileres registrados en la base de datos.✅
-18. Mostrar los automóviles con capacidad igual a 5 personas y que estén disponibles.
-19. Login de usuario mediante JWT.
+18. Mostrar los automóviles con capacidad igual a 5 personas y que estén disponibles.✅
+19. Login de usuario mediante JWT.✅
 20. Listar los alquileres con fecha de inicio entre '2023-07-05' y '2023-07-10'✅.
