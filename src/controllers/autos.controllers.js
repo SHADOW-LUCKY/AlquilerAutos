@@ -37,7 +37,8 @@ export const getAutosGtFive = async (req, res) => {
     }
 }
 
-// 16.Listar todos los automóviles ordenados por marca y modelo.
+
+// 15.Listar todos los automóviles ordenados por marca y modelo.
 
 export const getAutos = async (req, res) => {
     try {
@@ -53,4 +54,50 @@ export const getAutos = async (req, res) => {
     } catch (error) {
         res.status(500).json(error)
     }
+}
+
+//16. Mostrar la cantidad total de automóviles en cada sucursal junto con su dirección.
+export const getSucursalAutos = async (req, res) => {
+    try {
+        const sucursal = await DBconnection('Automoviles')
+        const result = await sucursal.aggregate([
+            {
+              $lookup: {
+                from: "Sucursales",
+                localField: "Stock.Sucursal",
+                foreignField: "Nombre",
+                as: "Sucursal"
+              }
+            },
+            {
+              $group: {
+                _id: "$Stock.Sucursal",
+                CantidadTotal: { $sum: "$Stock.Cantidad" },
+                Direccion: { $first: "$Sucursal.Direccion" }
+              }
+            },
+            {
+              $project: {
+                _id: 0,
+                Sucursal: "$_id",
+                CantidadTotal: 1,
+                Direccion: 1
+              }
+            }
+          ]).toArray();
+        result.length === 0 ? (
+            res.status(400).json({
+                msg: 'No hay autos registrados'
+            })
+        ) : (
+            res.status(200).json(result)
+        )
+    } catch (error) {
+        res.status(500).json(error)
+    }
+}
+
+//18. Mostrar los automóviles con capacidad igual a 5 personas y que estén disponibles.
+export const getAutosDisponibles = async (req, res) => {
+    
 }
